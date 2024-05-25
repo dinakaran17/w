@@ -1,0 +1,9 @@
+<% layout('layouts/temp') %>h1
+<h1>Home</h1>
+
+<ul>
+    <% for(let cam of camp ) {%>
+        <li><a href ='/camp/<%=cam.id %>'><%=cam.name %></a></li>
+        <% } %>
+</ul>
+

@@ -1,0 +1,12 @@
+<% layout('layouts/temp') %>
+
+<h1><%=camp.name %></h1>
+<h4><%=camp.id %></h4>
+
+<a href="/camp/<%=camp.id %>/edit">Edit</a>
+
+
+<form action="/camp/<%=camp.id %>?_method=delete" method="post">
+    <button>Delete</button>
+
+</form>

@@ -1,0 +1,7 @@
+<% layout('layouts/temp') %>
+<form action="/camp/<%=camp.id %>?_method=put" method="post">
+
+    <label for="name">Name</label>
+    <input type="text" name="name" placeholder="name" value="<%=camp.name %>">
+    <input type="submit">
+</form>
